@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <div class="calc-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="f">Fahrenheit:</label></td>
+                    <td class="math"><input type="text" id="f" name="f" min="-459.67" tabindex="1" autofocus=""></td>
+                    <td class="mathsymbol">°F</td>
+                    <td><input onclick="ConvertFahrenheit()" type="button" value="Convert" class="btn" tabindex="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="r">Rankine:</label></td>
+                    <td class="math"><input type="text" id="r" name="r" min="0" tabindex="3"></td>
+                    <td class="mathsymbol">°R</td>
+                    <td><input onclick="ConvertRankine()" type="button" value="Convert" class="btn" tabindex="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="cel">Celsius:</label></td>
+                    <td class="math"><input type="text" id="cel" name="cel" min="-273.15" tabindex="5"></td>
+                    <td class="mathsymbol">°C</td>
+                    <td><input onclick="ConvertCelsius()" type="button" value="Convert" class="btn" tabindex="6"></td>
+                </tr>
+                <tr>
+                    <td><label for="cen">Centigrade:</label></td>
+                    <td class="math"><input type="text" id="cen" name="cen" min="-273" tabindex="7"></td>
+                    <td class="mathsymbol">°C</td>
+                    <td><input onclick="ConvertCentigrade()" type="button" value="Convert" class="btn" tabindex="8"></td>
+                </tr>
+                <tr>
+                    <td><label for="k">Kelvin:</label></td>
+                    <td class="math"><input type="text" id="k" name="k" min="0" tabindex="9"></td>
+                    <td class="mathsymbol">K</td>
+                    <td><input onclick="ConvertKelvin()" type="button" value="Convert" class="btn" tabindex="10"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><input type="reset" value="Reset" class="btn" onclick="creset()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
